@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Abishekram | projects</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <header>
+        <nav class="navBar">
+    <h1 class="navLogo">Portfolio</h1>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="navMenu" id="navMenu">
+        <li class="navLinks"><a href="index.html">Home</a></li>
+        <li class="navLinks"><a href="#home">About</a></li>
+        <li class="navLinks"><a href="#project">Projects</a></li>
+        <li class="navLinks"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <!--Hero Section-->
+     <section class="hero" id="home">
+        <div class="heror">
+            <h1 class="heroName">I'm Abishekram</h1>
+            <h3 class="role"><span class="heroSpan">F</span>ront - <span class="heroSpan">E</span>nd <span class="heroSpan">D</span>eveloper</h3>
+</div>
+</section>
+
+<!--All Projects-->
+<section class="projects" id="project">
+    <div class="project"><h1>All Projects</h1></div>
+
+    <div class="projects-container">
+
+
+        <!-- Project Card 1 -->
+    <div class="project-card">
+        <img src="Portfolio.png" alt="Project Image" class="project-image">
+        <h3 class="project-title">Portfolio</h3>
+        <div class="tech-stack">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+        </div>
+        <div class="project-links">
+            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+        </div>
+    </div>
+    <!-- Project Card 2 -->
+    <div class="project-card">
+        <img src="NM mobiles.png" alt="Project Image" class="project-image">
+        <h3 class="project-title">NM Mobiles</h3>
+        <div class="tech-stack">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+        </div>
+        <div class="project-links">
+            <a href="https://nmmobiles.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+        </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+        <img src="Lakshmi electronics.png" alt="Project Image" class="project-image">
+        <h3 class="project-title">Lakshmi Electronics</h3>
+        <div class="tech-stack">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+        </div>
+        <div class="project-links">
+            <a href="https://lakshmielectronics.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!--Contact-->
+    <section class="contact" id="contact">
+    <div class="conlft">
+        <h1>Abishekram</h1>
+        <p>Front-end Developer</p>
+    </div>
+
+    <div class="conrgt">
+        <div class="contactRow">
+            <p class="emailInfo">
+                <a href="mailto:abishekram596@gmail.com"><i class="fa-solid fa-envelope email"></i></a>
+            </p>
+            <a href="#contact" class="cbtn">Contact</a>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer section-->
+    <footer class="footer">
+        <div class="ftrlft">
+            <h1 class="ftrt">Contact Me</h1>
+            <p><a href="mailto:abishekram596@gmail.com" class="ftrcnt">abishekram596@gmail.com</a></p>
+            <p><a href="tel:+918668192086" class="ftrcnt">+91 86681 92086</a></p>
+            <p>Tirupur, Tamil Nadu</p>
+        </div>
+
+        <div class="ftrcen">
+            <p>Quick Links</p>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+
+        <div class="ftrrgt">
+    <h1 class="follow">Follow Me</h1>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abishekram-r-19328732a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B3mLNMOqOTdmsRlLSTjKHYw%3D%3D" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Abishekram03" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/_.abishekram._/?__pwa=1#" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+
+    </footer>
+
+<!--Java script for hamburger menu-->
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('navMenu');
+
+// Toggle menu and hamburger cross
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+});
+
+</script>
+</body>
+</html>
